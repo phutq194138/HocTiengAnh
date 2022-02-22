@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="3dp">
+
+    <LinearLayout
+        android:id="@+id/layout_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_item_topic"
+        android:padding="2dp"
+        android:orientation="vertical">
+
+        <com.example.hoctienganh.custom.MyImageView
+            android:id="@+id/img_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tv_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Rat xin chao"
+            android:fontFamily="@font/uvn"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_word_mean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:fontFamily="@font/uvn"
+            android:text="xin chào"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

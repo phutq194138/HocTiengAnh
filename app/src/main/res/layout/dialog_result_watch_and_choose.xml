@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@drawable/bogoctron">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_score_watch_and_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Score: 15/20"
+            android:textSize="25sp"
+            android:fontFamily="@font/uvn"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="5dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_result_watch_and_choose"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btn_cancer_watch_and_choose"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#FF0000"
+                android:fontFamily="@font/uvn"
+                android:textStyle="normal"
+                android:background="@drawable/button_exit"
+                android:stateListAnimator="@null"
+                android:text="Thoát"/>
+
+            <Button
+                android:id="@+id/btn_try_again_watch_and_choose"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#00FF00"
+                android:fontFamily="@font/uvn"
+                android:textStyle="normal"
+                android:background="@drawable/button_try_again"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:stateListAnimator="@null"
+                android:text="Thử lại"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

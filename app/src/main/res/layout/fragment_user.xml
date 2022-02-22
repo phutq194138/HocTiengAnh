@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_3">
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/custom_button_login"
+        android:padding="15dp"
+        android:text="Đăng nhập"
+        android:textColor="@color/black"
+        android:stateListAnimator="@null"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/layout_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent">
+
+                <Button
+                    android:id="@+id/btn_user_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableStart="@drawable/ic_star"
+                    android:drawableTint="@color/yellow_01"
+                    android:padding="10dp"
+                    android:text="1200"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_edit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:padding="10dp"
+                    android:background="@android:color/transparent"
+                    android:text="Chỉnh sửa"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+                    android:textColor="@color/white"
+                    android:stateListAnimator="@null"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_avatar_user"
+                    android:layout_width="115dp"
+                    android:layout_height="115dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/cat"/>
+
+                <ImageView
+                    android:id="@+id/img_crown_user"
+                    android:layout_width="210dp"
+                    android:layout_height="210dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/snowman_crown" />
+
+                <TextView
+                    android:id="@+id/tv_user_full_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="Alexsander Diaonan"
+                    android:textColor="#FFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/gray_02" />
+
+            <Button
+                android:id="@+id/btn_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button_fragment_user"
+                android:drawableStart="@drawable/ic_history"
+                android:drawableEnd="@drawable/ic_right"
+                android:drawableTint="#F44336"
+                android:textColor="#F44336"
+                android:gravity="start|center"
+                android:padding="15dp"
+                android:stateListAnimator="@null"
+                android:text="   Lịch sử"
+                android:textAlignment="gravity"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray_01" />
+
+            <Button
+                android:id="@+id/btn_store"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button_fragment_user"
+                android:drawableStart="@drawable/ic_gif"
+                android:drawableEnd="@drawable/ic_right"
+                android:gravity="start|center"
+                android:padding="15dp"
+                android:stateListAnimator="@null"
+                android:drawableTint="#9C27B0"
+                android:textColor="#9C27B0"
+                android:text="   Cửa hàng"
+                android:textAlignment="gravity"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray_01" />
+
+            <Button
+                android:id="@+id/btn_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button_fragment_user"
+                android:drawableStart="@drawable/ic_level"
+                android:drawableEnd="@drawable/ic_right"
+                android:gravity="start|center"
+                android:padding="15dp"
+                android:stateListAnimator="@null"
+                android:text="   Cấp độ"
+                android:drawableTint="#03A9F4"
+                android:textColor="#03A9F4"
+                android:textAlignment="gravity"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray_01" />
+
+            <Button
+                android:id="@+id/btn_favorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button_fragment_user"
+                android:drawableStart="@drawable/ic_favorite"
+                android:drawableEnd="@drawable/ic_right"
+                android:gravity="start|center"
+                android:padding="15dp"
+                android:stateListAnimator="@null"
+                android:drawableTint="#FF0000"
+                android:textColor="#FF0000"
+                android:text="   Yêu thích"
+                android:textAlignment="gravity"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/btn_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button_fragment_user"
+                android:drawableStart="@drawable/ic_setting"
+                android:drawableEnd="@drawable/ic_right"
+                android:gravity="start|center"
+                android:padding="15dp"
+                android:stateListAnimator="@null"
+                android:drawableTint="#6AFF00"
+                android:textColor="#6AFF00"
+                android:text="   Cài đặt"
+                android:textAlignment="gravity"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button_fragment_user"
+                android:drawableStart="@drawable/ic_login"
+                android:gravity="start|center"
+                android:padding="15dp"
+                android:stateListAnimator="@null"
+                android:drawableTint="#FFC107"
+                android:textColor="#FFC107"
+                android:text="   Đăng xuất"
+                android:textAlignment="gravity"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

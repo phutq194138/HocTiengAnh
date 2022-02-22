@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_3"
+    tools:context=".activity.Haha">
+
+    <RelativeLayout
+        android:id="@+id/id001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/white"
+                android:layout_centerInParent="true"/>
+
+            <Button
+                android:id="@+id/btn_exit_watch_and_choose"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_cancer"
+                android:backgroundTint="@color/custom_color_icon_back"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id002"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/id001">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bogoctron">
+
+            <Button
+                android:id="@+id/btn_help_watch_and_choose"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_infor"
+                android:backgroundTint="@color/custom_color_icon_back"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:stateListAnimator="@null"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="2dp">
+
+                <ImageView
+                    android:id="@+id/img_question_watch_and_choose"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="#4C4B4C"
+                    android:padding="2dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_question_watch_and_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bogoctron"
+            android:text="Câu hỏi 5/15"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:fontFamily="@font/uvn"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/id003"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_answer1_watch_and_choose"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:text="Hahaha"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/alata"
+                android:background="@drawable/background_default"/>
+
+            <Button
+                android:id="@+id/btn_answer2_watch_and_choose"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="Hahaha"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/alata"
+                android:background="@drawable/background_orange"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/btn_answer3_watch_and_choose"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:text="Hahaha"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/alata"
+                android:background="@drawable/background_green"/>
+
+            <Button
+                android:id="@+id/btn_answer4_watch_and_choose"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="Hahaha"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/alata"
+                android:background="@drawable/background_red"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

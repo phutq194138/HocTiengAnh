@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_word_favorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_item_topic"
+            android:padding="2dp"
+            android:orientation="vertical">
+
+            <com.example.hoctienganh.custom.MyImageView
+                android:id="@+id/img_word_favorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/tv_word_favorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Rat xin chao"
+                android:fontFamily="@font/uvn"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_word_mean_favorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="@font/uvn"
+                android:text="xin chào"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_is_favorite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_favorite"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="#FF0000"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:stateListAnimator="@null"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

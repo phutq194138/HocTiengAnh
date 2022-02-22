@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:background="@drawable/bogoctron">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Kết quả"
+        android:textSize="25sp"
+        android:fontFamily="@font/uvn"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/uvn"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="Bắt đầu:"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_hour_start_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textSize="15sp"
+                android:fontFamily="@font/uvn"
+                android:textColor="@color/black"
+                android:layout_marginRight="5dp"
+                android:text="23:03:03"/>
+
+            <TextView
+                android:id="@+id/tv_day_start_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/uvn"
+                android:textColor="@color/black"
+                android:layout_marginRight="5dp"
+                android:text="25-07-2001"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/uvn"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="Kết thúc:"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_hour_end_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textSize="15sp"
+                android:fontFamily="@font/uvn"
+                android:textColor="@color/black"
+                android:layout_marginRight="5dp"
+                android:text="23:03:03"/>
+
+            <TextView
+                android:id="@+id/tv_day_end_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/uvn"
+                android:textColor="@color/black"
+                android:layout_marginRight="5dp"
+                android:text="25-07-2001"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/uvn"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="Thời gian:"/>
+
+        <TextView
+            android:id="@+id/tv_time_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/uvn"
+            android:textColor="@color/black"
+            android:text="20s"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/uvn"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="Số câu đúng:"/>
+
+        <TextView
+            android:id="@+id/tv_correct_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/uvn"
+            android:textColor="@color/black"
+            android:text="20/30"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/uvn"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="Điểm:"/>
+
+        <TextView
+            android:id="@+id/tv_point_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/uvn"
+            android:textColor="@color/black"
+            android:text="9"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/uvn"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="Kinh nghiệm:"/>
+
+        <TextView
+            android:id="@+id/tv_exp_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/uvn"
+            android:textColor="@color/black"
+            android:text="10"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/uvn"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="Số sao:"/>
+
+        <TextView
+            android:id="@+id/tv_star_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/uvn"
+            android:textColor="@color/black"
+            android:text="5"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_done_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Đồng ý"
+        android:fontFamily="@font/uvn"
+        android:textAllCaps="false"
+        android:textColor="#00FF00"
+        android:background="@drawable/button_try_again"
+        android:layout_marginRight="90dp"
+        android:layout_marginLeft="90dp"/>
+
+</LinearLayout>

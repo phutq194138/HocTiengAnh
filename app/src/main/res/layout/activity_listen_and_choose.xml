@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_3"
+    tools:context=".activity.ListenAndChoose">
+
+    <RelativeLayout
+        android:id="@+id/id001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/white"
+                android:layout_centerInParent="true"/>
+
+            <Button
+                android:id="@+id/btn_exit_listen_and_choose"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_cancer"
+                android:backgroundTint="@color/custom_color_icon_back"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id002"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/id001">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bogoctron">
+
+            <Button
+                android:id="@+id/btn_help_listen_and_choose"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_infor"
+                android:backgroundTint="@color/custom_color_icon_back"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:stateListAnimator="@null"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="2dp">
+
+                <ImageButton
+                    android:id="@+id/img_question_listen_and_choose"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/vol"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_question_listen_and_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bogoctron"
+            android:text="Câu hỏi 5/15"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:fontFamily="@font/uvn"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/id003"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.example.hoctienganh.custom.MyImageButton
+                    android:id="@+id/img_answer1_listen_and_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/cat"
+                    android:background="@drawable/background_image_button_default"
+                    android:scaleType="fitXY"/>
+
+                <com.example.hoctienganh.custom.MyImageView
+                    android:id="@+id/img_ans1_correct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/ic_correct"/>
+
+                <com.example.hoctienganh.custom.MyImageView
+                    android:id="@+id/img_ans1_wrong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/ic_wrong"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp">
+
+                <com.example.hoctienganh.custom.MyImageButton
+                    android:id="@+id/img_answer2_listen_and_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_image_button_default"
+                    android:layout_weight="1"
+                    android:src="@drawable/cat"
+                    android:scaleType="fitXY"/>
+
+                <com.example.hoctienganh.custom.MyImageView
+                    android:id="@+id/img_ans2_correct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/ic_correct"/>
+
+                <com.example.hoctienganh.custom.MyImageView
+                    android:id="@+id/img_ans2_wrong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/ic_wrong"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.example.hoctienganh.custom.MyImageButton
+                    android:id="@+id/img_answer3_listen_and_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_image_button_default"
+                    android:layout_weight="1"
+                    android:src="@drawable/cat"
+                    android:scaleType="fitXY"/>
+
+                <com.example.hoctienganh.custom.MyImageView
+                    android:id="@+id/img_ans3_correct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/ic_correct"/>
+
+                <com.example.hoctienganh.custom.MyImageView
+                    android:id="@+id/img_ans3_wrong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/ic_wrong"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp">
+
+                <com.example.hoctienganh.custom.MyImageButton
+                    android:id="@+id/img_answer4_listen_and_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_image_button_default"
+                    android:layout_weight="1"
+                    android:src="@drawable/cat"
+                    android:scaleType="fitXY"/>
+
+                <com.example.hoctienganh.custom.MyImageView
+                    android:id="@+id/img_ans4_correct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/ic_correct"/>
+
+                <com.example.hoctienganh.custom.MyImageView
+                    android:id="@+id/img_ans4_wrong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/ic_wrong"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
